@@ -1563,20 +1563,41 @@ textarea.form-input {
   }
   
   .portrait-container {
-    width: 280px;
-    height: 350px;
+    width: 260px;
+    height: 320px;
   }
   
   .floating-badge {
-    padding: 10px 14px;
+    padding: 7px 11px;
+    gap: 8px;
+  }
+  
+  .floating-badge .badge-icon {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .floating-badge .badge-icon svg {
+    width: 13px;
+    height: 13px;
+  }
+  
+  .floating-badge .badge-main-text {
+    font-size: 0.75rem;
+  }
+  
+  .floating-badge .badge-sub-text {
+    font-size: 0.65rem;
   }
   
   .badge-top-right {
-    right: -20px;
+    top: 150px; /* Lower position on mobile to prevent blocking the face */
+    right: -30px;
   }
   
   .badge-bottom-left {
-    left: -20px;
+    bottom: 15px; /* Safely placed near the bottom */
+    left: -30px;
   }
 
   .card-grid-2x2 {
