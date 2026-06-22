@@ -1542,29 +1542,11 @@ textarea.form-input {
     grid-template-columns: 1fr;
     gap: 50px;
   }
-}
 
-/* Mobile Breakpoint */
-@media (max-width: 768px) {
-  .site-header {
-    padding: 0 20px;
-  }
-
-  .nav-links {
-    display: none; /* simple mobile drawer could be added, but for now we hide links or layout smaller */
-  }
-  
-  .section-wrap {
-    padding: 60px 20px;
-  }
-  
-  .hero-heading {
-    font-size: clamp(2.8rem, 10vw, 4rem);
-  }
-  
   .portrait-container {
     width: 260px;
     height: 445px; /* Taller to fit stacked badges below the photo */
+    margin: 0 auto;
   }
 
   .profile-photo {
@@ -1587,7 +1569,7 @@ textarea.form-input {
     transform: translateX(-50%) !important;
     padding: 10px 14px;
     gap: 10px;
-    animation: none !important; /* Disable float bounce on mobile */
+    animation: none !important; /* Disable float bounce */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
   }
   
@@ -1616,6 +1598,25 @@ textarea.form-input {
   .badge-bottom-left {
     top: 395px; /* Stacked below the first badge */
     bottom: auto;
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    display: none; /* simple mobile drawer could be added, but for now we hide links or layout smaller */
+  }
+  
+  .section-wrap {
+    padding: 60px 20px;
+  }
+  
+  .hero-heading {
+    font-size: clamp(2.8rem, 10vw, 4rem);
   }
 
   .card-grid-2x2 {
