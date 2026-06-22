@@ -1,0 +1,17 @@
+# Local virtual environment
+.venv/
+
+# OS metadata
+.DS_Store
+
+# Large preview screenshot directories and images
+preview_screens/
+*.HEIC
+*.png
+
+# Behance inspiration/reference files
+*Behance*
+www.behance.net*
+
+# Build and scratch scripts
+copy_cli.py
