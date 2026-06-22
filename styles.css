@@ -683,14 +683,14 @@ html.light-theme .theme-toggle:hover {
 }
 
 .badge-top-right {
-  top: 40px;
-  right: -50px;
+  top: 50px;
+  right: -100px;
   animation-delay: 0s;
 }
 
 .badge-bottom-left {
-  bottom: 40px;
-  left: -50px;
+  bottom: 50px;
+  left: -100px;
   animation-delay: 2s;
 }
 
