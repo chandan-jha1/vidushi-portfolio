@@ -1564,40 +1564,58 @@ textarea.form-input {
   
   .portrait-container {
     width: 260px;
-    height: 320px;
+    height: 445px; /* Taller to fit stacked badges below the photo */
+  }
+
+  .profile-photo {
+    height: 320px; /* Fixed photo height */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 130px;
+  }
+
+  .gradient-glow-ring {
+    bottom: 125px !important; /* Constrain the glow to the photo area only */
+    border-radius: 130px !important;
   }
   
   .floating-badge {
-    padding: 7px 11px;
-    gap: 8px;
+    position: absolute;
+    width: 280px; /* Centered and slightly wider than the photo */
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    padding: 10px 14px;
+    gap: 10px;
+    animation: none !important; /* Disable float bounce on mobile */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
   }
   
   .floating-badge .badge-icon {
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
   }
   
   .floating-badge .badge-icon svg {
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
   }
   
   .floating-badge .badge-main-text {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
   
   .floating-badge .badge-sub-text {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
   }
   
   .badge-top-right {
-    top: 150px; /* Lower position on mobile to prevent blocking the face */
-    right: -30px;
+    top: 335px; /* Sits right under the photo */
   }
   
   .badge-bottom-left {
-    bottom: 15px; /* Safely placed near the bottom */
-    left: -30px;
+    top: 395px; /* Stacked below the first badge */
+    bottom: auto;
   }
 
   .card-grid-2x2 {
